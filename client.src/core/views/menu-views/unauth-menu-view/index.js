@@ -7,5 +7,15 @@
 import * as mn from 'marionette';
 
 export default mn.ItemView.extend({
-  template: 'loginView'
+  template: 'loginView',
+
+  ui: 'a',
+
+  events: {
+    'click a': 'onClickLogin'
+  },
+
+  onClickLogin: function() {
+    
+  }
 });
